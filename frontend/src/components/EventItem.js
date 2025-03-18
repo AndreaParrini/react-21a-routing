@@ -2,21 +2,9 @@ import classes from './EventItem.module.css';
 
 import {Link} from 'react-router-dom';
 
-const EVENTS = [
-    {
-      "id": "e1",
-      "title": "A dummy event",
-      "date": "2023-02-22",
-      "image": "https://blog.hubspot.de/hubfs/Germany/Blog_images/Optimize_Marketing%20Events%20DACH%202021.jpg",
-      "description": "Join this amazing event and connect with fellow developers."
-    }
-  ]
+function EventItem({ event }) {
 
-function EventItem({ eventId }) {
-
-  const eventSelected = EVENTS.filter(event => event.id === eventId);
-
-  const [event] = [...eventSelected];
+  console.log(event);
 
   function startDeleteHandler() {
     // ...
