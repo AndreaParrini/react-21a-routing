@@ -10,7 +10,7 @@ function EventItem({ event }) {
     const proceed = window.confirm('Are you sure ?');
 
     if(proceed){
-      submit(null, {method: 'delete'});
+      submit(null, {method: 'delete'}); // il primo valore da mandare sono i dati che si vogliono inviare al backend, in questo caso null in quanto si elimina un record
     }
   }
 
