@@ -4,8 +4,6 @@ import {Link} from 'react-router-dom';
 
 function EventItem({ event }) {
 
-  console.log(event);
-
   function startDeleteHandler() {
     // ...
   }
